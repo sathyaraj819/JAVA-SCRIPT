@@ -1,0 +1,21 @@
+<html>
+<body>
+<h2>JavaScript Prompt</h2>
+<button onclick="myFunction()">Try </button>
+<p id="aaa"></p>
+<script>
+function myFunction() {
+var txt;
+var person = prompt("Please enter your name:", "");
+if (person == null || person == "") 
+{
+txt = "User cancelled the prompt.";
+    } else {
+txt = "Hi " + person + "! Welcome to RIT";
+    }
+document.getElementById("aaa").innerHTML = txt;
+}
+</script>
+</body>
+</html>
+

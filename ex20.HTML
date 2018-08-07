@@ -1,0 +1,22 @@
+<html>
+<body>
+<p>Enter number</p>
+<input id="data">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction() 
+{
+var x, text;
+x = document.getElementById("data").value;
+if (isNaN(x) || x < 1) {
+alert("numbers only are accepted");
+} else 
+{
+text = "OK";
+}
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<script>
+function validateform()
+{    
+var password=document.myform.password.value;  
+if(password.length<6)
+{  
+alert("Password must be at least 6 characters long.");    
+}  
+}  
+</script>
+<body>
+<form name="myform" method="post" onsubmit="validateform()" >
+Password: <input type="password" name="password"><br>
+<br><input type="submit" value="login">
+</form>
+</body>
+</html>
